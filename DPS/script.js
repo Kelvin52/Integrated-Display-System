@@ -15,7 +15,7 @@ var str = "";
 	
 setInterval(doDate, 1000);
 
-	document.getElementById('hnsButt').onclick = "location.href = 'http://127.0.0.1:8080/health%20And%20Safety%20Page.html'";
+	document.getElementById('HnSButt').onclick = "location.href = 'http://127.0.0.1:8080/health%20And%20Safety%20Page.html'";
 	
 	document.getElementById('TTbutt').onclick = "location.href = 'http://127.0.0.1:8080/Prototype2.html'";
 	
