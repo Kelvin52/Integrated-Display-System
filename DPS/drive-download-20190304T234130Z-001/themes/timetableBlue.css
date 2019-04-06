@@ -1,0 +1,53 @@
+﻿@font-face {font-family: 'HeliaCore-Medium';src: url('../fonts/2D23E1_0_0.eot');src: url('../fonts/2D23E1_0_0.eot?#iefix') format('embedded-opentype'),url('../fonts/2D23E1_0_0.woff2') format('woff2'),url('../fonts/2D23E1_0_0.woff') format('woff'),url('../fonts/2D23E1_0_0.ttf') format('truetype');}
+
+
+
+body {
+   font-family: 'HeliaCore-Medium',Calibri;
+	background-color: #000000;
+    /*background-image: url('../images/BlueBackground.gif');*/
+    background-size: 100%;
+    overflow: hidden;
+}
+
+/*<!--JAV-->*/
+#headerrow {
+    background-color: #0089cf;
+}
+
+
+.row-background {
+    background-image: url('../images/BlueRow.gif');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    margin-bottom: 10px;
+}
+.title-box {
+	border: 0px;	
+   	border-right: 2px solid #9ddcf9;
+    height: 120px;
+}
+.title-large {
+    color: #ffffff;
+}
+
+@media (min-width: 768px) {
+	.title-box {
+		height: 80px;
+	}
+}
+@media (min-width: 992px) {
+	.title-box {
+		height: 82px;
+	}
+}
+@media (min-width: 1200px) {
+	.title-box {
+		height: 94px;
+	}
+}
+@media (min-width: 1600px) {
+	.title-box {
+		height: 120px;
+	}
+}

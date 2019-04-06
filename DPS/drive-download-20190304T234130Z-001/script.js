@@ -10,7 +10,7 @@ function doDate(){
     str += days[now.getDay()] + ", " + now.getDate() + " " + months[now.getMonth()] + " " + now.getFullYear() + " " + now.getHours() +":" + now.getMinutes(); // + ":" + now.getSeconds();
 
 
-    document.getElementById("time").innerHTML =  str ;
+    document.getElementById("clock").innerHTML =  str ;
 }
 	
 setInterval(doDate, 1000);
