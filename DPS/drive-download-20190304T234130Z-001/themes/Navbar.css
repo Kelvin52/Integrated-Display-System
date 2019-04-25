@@ -50,53 +50,33 @@ nav a:hover{
     color: #000;
 }
 
-div.timetble{
-    overflow: scroll;
+table{
+  margin: center;
+  width: 100%;
+  /* table-layout: fixed; */
+  border-collapse: collapse;
 }
 
-table {
-    width: 100%;
-  }
-  
-  table, td, th {
-    border-collapse: collapse;
-    border: 1px solid #000;
-  }
-  
-  thead {
-    display: table; /* to take the same width as tr */
-    width: calc(100% - 20px); /* - 17px because of the scrollbar width */
-  }
+table thead tr {
+  display: block;
+}
 
-  .column_time {
-    width: 50%;
-  }
+table tbody{
+display:block;
+width: 100%;
+overflow: auto;
+height: 400px;
+}
 
 
-  .column_week {
-    width: 30%
-  }
-  
-  tbody {
-    display: block; /* to enable vertical scrolling */
-    max-height: 440px; /* e.g. */
-    overflow-y: scroll; /* keeps the scrollbar even if it doesn't need it; display purpose */
-  }
-  
-  th, td {
-     /* to enable "word-break: break-all" */
-    padding: 15px;
-    word-break: break-all; /* 4. */
-  }
-  
-  tr {
-    display: table; /* display purpose; th's border */
-    width: 100%;
-    box-sizing: border-box; /* because of the border (Chrome needs this line, but not FF) */
-  }
-  
-  td {
-    text-align: center;
-    border-bottom: none;
-    border-left: none;
-  }
+table thead {
+background: white;
+color: black;
+}
+
+table th, table td {
+border: 1px solid black;
+padding: 5px;
+text-align: center;
+width: 150px;
+}
