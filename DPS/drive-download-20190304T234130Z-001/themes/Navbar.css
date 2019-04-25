@@ -50,31 +50,31 @@ nav a:hover{
     color: #000;
 }
 
-table{
-  margin: center;
+.table{
+  margin: auto;
   width: 100%;
-  /* table-layout: fixed; */
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
-table thead tr {
+.table thead tr {
   display: block;
 }
 
-table tbody{
+.table tbody{
 display:block;
-width: 100%;
+/* width: 100%; */
 overflow: auto;
 height: 400px;
 }
 
 
-table thead {
+.table thead {
 background: white;
 color: black;
 }
 
-table th, table td {
+.table th, .table td {
 border: 1px solid black;
 padding: 5px;
 text-align: center;
