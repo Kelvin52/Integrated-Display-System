@@ -14,7 +14,7 @@
  }
 setInterval(doDate, 1000);
 
-var timeouttime = 5000;
+/* var timeouttime = 5000; */
 var timeout = setTimeout(function() {
   window.location.href = "Promo_Vid.html";
 }, timeouttime);

@@ -69,27 +69,12 @@ table {
   }
 
   .column_time {
-    width: 154.8;
+    width: 50%;
   }
 
-  .column_monday {
-    width: 214.8;
-  }
 
-  .column_tuesday {
-    width: 214.8;
-  }
-
-  .column_wendsday {
-    width: 214.8;
-  }
-
-  .column_thursday {
-    width: 214.8;
-  }
-
-  .column_friday {
-    width: 214.8;
+  .column_week {
+    width: 30%
   }
   
   tbody {
