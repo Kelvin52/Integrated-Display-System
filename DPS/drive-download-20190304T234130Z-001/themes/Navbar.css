@@ -67,6 +67,30 @@ table {
     display: table; /* to take the same width as tr */
     width: calc(100% - 20px); /* - 17px because of the scrollbar width */
   }
+
+  .column_time {
+    width: 154.8;
+  }
+
+  .column_monday {
+    width: 214.8;
+  }
+
+  .column_tuesday {
+    width: 214.8;
+  }
+
+  .column_wendsday {
+    width: 214.8;
+  }
+
+  .column_thursday {
+    width: 214.8;
+  }
+
+  .column_friday {
+    width: 214.8;
+  }
   
   tbody {
     display: block; /* to enable vertical scrolling */
