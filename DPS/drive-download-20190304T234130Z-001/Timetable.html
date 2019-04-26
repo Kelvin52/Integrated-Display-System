@@ -5,6 +5,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 
+
 <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 <script src="script.js"></script>
@@ -35,7 +36,7 @@
 
 <body onmousedown="ResetRedir()">
 <header>
-        <div class="container">
+        <div class="nav_container">
                 
             <img src="images/AUT-logo-block.png" width="96.39" height="68.34" alt="logo" class="logo">
                 
@@ -43,7 +44,7 @@
                 <ul>
                     <li><a href="#">Timetable</a></li>
                     <li><a href="#">Health and Safety</a></li>
-                    <li><a href="#">Booking</a></li>
+                    <li><a href="#"class="booking_button" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">booking</a></li>
                 </ul>
             </nav>
         </div>
@@ -63,7 +64,17 @@
     
     
     <table class="table">
-       
+
+        <!-- <colgroup>
+            <col stlye="width: 10%">
+            <col stlye="width: 18%">
+            <col stlye="width: 18%">
+            <col stlye="width: 18%">
+            <col stlye="width: 18%">
+            <col stlye="width: 18%">
+            
+        </colgroup>
+        -->
         <thead>
             <TR>
                 <TH>TIME</TH>
@@ -251,6 +262,36 @@
 </div>
 
 
+<!-- test field -->
+
+</style>
+</head>
+<body>
+
+
+
+<div id="id01" class="modal">
+  
+  <form class="modal-content animate" action="/action_page.php">
+    
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required>
+        
+      <button class="login" type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+  </form>
+</div>
+
+
 <script>
 
 
@@ -269,7 +310,15 @@ document.getElementById("time").innerHTML =  str ;
 }
 setInterval(doDate, 1000); */
 
+// Get the modal
+var modal = document.getElementById('id01');
 
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal) {
+        modal.style.display = "none";
+    }
+}
 
 
 </script>
