@@ -1,80 +1,60 @@
 <!doctype html>
+
 <head>
 
-        <!--??WHAT IS THIS ABOUT AUTHOR??--><meta name="author" content="SitePoint">
+    <!--??WHAT IS THIS ABOUT AUTHOR??-->
+    <meta name="author" content="SitePoint">
 
-<title>Promo</title>
-<html lang="en">
+    <title>Promo</title>
+    <html lang="en">
 
-<meta charset="utf-8">
-<meta name="description" content="The HTML5 Herald">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="description" content="The HTML5 Herald">
+    <!--     <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <!-- viewport for IOS prevent double-tap zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
 
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
+    <link href="themes/Promo.css" rel="stylesheet" type="text/css">
 
-
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
-
-
-   <!--<style>
-
-        video {
-            position: fixed;
-            top: 0;
-            left: 0;
-            
-            
-            width: 100%; 
-            height: 100%;
-        }
+    <!--     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
 
 
-        body {
-        font-family: arial, calibri;
-        }
-        
-        div {
-            background-color: rgb(255,236,245);
-            width: 800px;
-            height: 650px;
-            border: 4px solid;
-            border-color: black;
-            padding: 25px;
-            margin: 25px;
-        }
-        
-        TABLE {
-            font-family: arial, calibri;
-            border-collapse: collapse;
-            width: 100%;
-        }
-        
-        TD, TH {
-            border: 1px solid black;
-            text-align: left;
-            padding: 8px;
-        }
-        
-        TR:nth-child(even) {
-            background-color: #dddddd;
-            }
-            
-    </style>
--->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script> -->
+    <!--     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+
+
+
 </head>
 
-<body>
+<body onclick="window.location= 'Timetable.php';">
+    <!--onclick="window.location= 'Timetable.html';"-->
+
+    <div>
+
+        <div class="marquee overlay">
+            <h1 class="stroke">
+                Press screen to view timetables
+            </h1>
+        </div>
+
+        <video class="video" id="video" src="PromoVid/AUTV ETD 2019 Story of WZ 02_1.mp4" height="768" width="1024"
+            autoplay muted playsinline loop>
+        </video>
 
 
-    <video src="PromoVid/Coming to Nintendo Switch.mp4" id="video" autoplay 
-    onclick="window.location= 'Timetable.html';"></video>
-    
+    </div>
+
     <a href="Timetable.html"></a>
 
-<script type="text/javascript" src="script2.js"></script>
+    <script type="text/javascript" src="Promo.js"></script>
 
 </body>
 

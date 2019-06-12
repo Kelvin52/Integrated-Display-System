@@ -2,6 +2,7 @@ body {
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
     font-weight: 400;
+/*     cursor: pointer; */
 }
 
 .nav_container {
@@ -53,8 +54,6 @@ nav a:hover{
 }
 
 .table{
-  margin: auto;
-  width: 100%;
   table-layout: fixed;
   border-collapse: collapse;
 }
@@ -197,4 +196,204 @@ span.psw {
   }
 }
 
-/* login fiture finished */
+/* For displaying timetable CSS*/
+
+/* There are five keys shows the colour of the booking status:(each, image)
+  Booked by any one:  dark grey 
+  Booked as lecture or lab: red
+  Open access (walk in): light grey
+  Available to be booked: blank
+  Closed: green
+
+  
+ user clicks dark grey, red, light grey area a notification window will comes up to shows unavailability.
+User clicks blank area to get into the login page and be able to use the student ID to log into the booking system. (Image)
+ */
+
+ .lecture_book{
+
+  background: rgba(216, 45, 45, 0.65);
+
+ }
+
+ .other_book{
+   background: rgba(138, 136, 129, 0.856);
+ }
+
+.booked{
+
+  background: rgba(49, 90, 226, 0.924);
+}
+
+#timetable{
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  z-index: 0;
+}
+
+#textbox{
+  position:absolute;
+  top: 21%;
+  left: 29%;
+  transform: translate(-50%,-50%);
+}
+
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+
+/* booking marquee text */
+
+.overlay {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 1;
+}
+
+/*   .demo-1 {
+ height: 60px;
+  overflow: hidden; 
+  position: relative; 
+} */
+
+.stroke {
+    color: white;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+
+ 
+}
+
+
+.overlay {
+  position: absolute;
+  top: 90%;
+  left: 0;
+  z-index: 1;
+}
+
+.marquee{
+  font-size: 2em;
+  color: #000000;
+  stroke: 1px black;
+/*   position: absolute; */
+  /*  width: 100%;
+ height: 100%; */
+  margin: 0;
+  /*  line-height: 50px; */
+  /*  text-align: center; */
+  overflow: hidden;
+  /*  display: inline-block; */
+  white-space: nowrap;
+
+  /* Starting position */
+/*   transform: translateX(0%); */
+
+  /* Apply animation to this element */
+  animation: marquee 15s linear infinite;
+}
+/* Move it (define the animation) */
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+
+/* For Help tip */
+.help-tip{
+	cursor:pointer;
+	position: absolute;
+	top: 20%;
+	right: 5%;
+	text-align: center;
+	background-color: #BCDBEA;
+	border-radius: 50%;
+	width: 24px;
+	height: 24px;
+	font-size: 14px;
+	line-height: 26px;
+	cursor: default;
+}
+
+.help-tip:before{
+	content:'?';
+	font-weight: bold;
+	color:#fff;
+}
+
+.help-tip:hover p{
+	display:block;
+	transform-origin: 100% 0%;
+
+	-webkit-animation: fadeIn 0.3s ease-in-out;
+	animation: fadeIn 0.3s ease-in-out;
+
+}
+
+.help-tip p{
+	display: none;
+	text-align: left;
+	background-color: #1E2021;
+	padding: 20px;
+	width: 300px;
+	position: absolute;
+	border-radius: 3px;
+	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+	right: -4px;
+	color: #FFF;
+	font-size: 13px;
+	line-height: 1.4;
+	z-index: 1;
+}
+
+.help-tip p:before{
+	position: absolute;
+	content: '';
+	width:0;
+	height: 0;
+	border:6px solid transparent;
+	border-bottom-color:#1E2021;
+	right:10px;
+	top:-12px;
+}
+
+.help-tip p:after{
+	width:100%;
+	height:40px;
+	content:'';
+	position: absolute;
+	top:-40px;
+	left:0;
+
+}
+
+@-webkit-keyframes fadeIn {
+	0% { 
+		opacity:0; 
+		transform: scale(0.6);
+	}
+
+	100% {
+		opacity:100%;
+		transform: scale(1);
+	}
+}
+
+@keyframes fadeIn {
+	0% { opacity:0; }
+	100% { opacity:100%; }
+}
